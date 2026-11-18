@@ -1,0 +1,21 @@
+company_name: "Company B"
+reporting_currency: "USD"
+classifier:
+  provider: "local"
+  model: "gpt-4o-mini"
+  batch_size: 25
+files:
+  invoices: "data/invoice_lines.csv"
+  fx_rates: "data/fx_rates_usd.csv"
+  taxonomy: "data/taxonomy_B.csv"
+  seed_labels: "data/seed_labels.csv"
+
+mappings:
+  id_col: "line_id"
+  amount_col: "line_amount"
+  currency_col: "currency"
+  currency_rate_col: "currency_rate"
+  date_col: "invoice_date"
+  supplier_col: "vendor_id"
+  desc_col: "line_description"
+  status_col: null

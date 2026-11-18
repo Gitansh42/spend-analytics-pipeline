@@ -1,0 +1,24 @@
+company_name: "Company A"
+reporting_currency: "ZAR"
+classifier:
+  provider: "local"
+  model: "gpt-4o-mini"
+  batch_size: 25
+files:
+  erp: "data/erp_goods_receipts.csv"
+  tool: "data/invoice_tool_export.csv"
+  taxonomy: "data/taxonomy_A.csv"
+  labels: "data/labels_A.csv"
+
+mappings:
+  erp_id_col: "line_id"
+  tool_id_col: "tool_record_id"
+  erp_amount_col: "value_zar"
+  tool_amount_col: "gross_amount"
+  erp_date_col: "posting_date"
+  tool_date_col: "invoice_date"
+  erp_supplier_col: "vendor_id"
+  tool_supplier_col: "supplier_name_as_captured"
+  erp_desc_col: "material_short_text"
+  tool_desc_col: "line_text"
+  status_col: "status"
