@@ -1,0 +1,14 @@
+company_name: "Company C"
+reporting_currency: "USD"
+classifier:
+  provider: "local"
+  model: "gpt-4o-mini"
+  batch_size: 25
+files:
+  invoice_lines: "data/invoice_lines_C.csv"
+  taxonomy: "data/category_tree_C.csv"
+mappings:
+  id_col: "line_id"
+  supplier_col: "supplier_name"
+  desc_col: "line_description"
+  amount_col: "line_amount_usd"
